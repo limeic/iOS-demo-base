@@ -16,7 +16,7 @@
 		9F2871651FF01B2900E8B6AA /* LemonDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2871641FF01B2900E8B6AA /* LemonDemoTests.m */; };
 		9F2871701FF01B2900E8B6AA /* LemonDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F28716F1FF01B2900E8B6AA /* LemonDemoUITests.m */; };
 		9F28717E1FF01B9800E8B6AA /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9F28717D1FF01B9800E8B6AA /* Podfile */; };
-		9F840F1A1FF0CCA500E00854 /* lemon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F840F191FF0CCA500E00854 /* lemon.framework */; };
+		9F96AF2E1FF2408E002790F5 /* lemon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F96AF2D1FF2408E002790F5 /* lemon.framework */; };
 		D370BB05D582274E950A579F /* libPods-LemonDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F74D5544B70A65E28695F793 /* libPods-LemonDemoUITests.a */; };
 		D6BA0CF49DE816F1DBF1F1AF /* libPods-LemonDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C485588F3FDD1D48DFA5A8C8 /* libPods-LemonDemoTests.a */; };
 /* End PBXBuildFile section */
@@ -61,7 +61,7 @@
 		9F28716F1FF01B2900E8B6AA /* LemonDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LemonDemoUITests.m; sourceTree = "<group>"; };
 		9F2871711FF01B2900E8B6AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F28717D1FF01B9800E8B6AA /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F840F191FF0CCA500E00854 /* lemon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = lemon.framework; sourceTree = "<group>"; };
+		9F96AF2D1FF2408E002790F5 /* lemon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = lemon.framework; sourceTree = "<group>"; };
 		AAF5230EDA9553FB3640C92E /* Pods-LemonDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LemonDemo/Pods-LemonDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B90ECC599343406909FC5CB5 /* Pods-LemonDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LemonDemoTests/Pods-LemonDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		C485588F3FDD1D48DFA5A8C8 /* libPods-LemonDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LemonDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F840F1A1FF0CCA500E00854 /* lemon.framework in Frameworks */,
+				9F96AF2E1FF2408E002790F5 /* lemon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +99,7 @@
 		89DAB7FB10DBD2EB5C73BF86 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9F840F191FF0CCA500E00854 /* lemon.framework */,
+				9F96AF2D1FF2408E002790F5 /* lemon.framework */,
 				2BF1168C02AE2A27B3DE6F43 /* libPods-LemonDemo.a */,
 				C485588F3FDD1D48DFA5A8C8 /* libPods-LemonDemoTests.a */,
 				F74D5544B70A65E28695F793 /* libPods-LemonDemoUITests.a */,
