@@ -8,8 +8,12 @@
 
 #import "ViewController.h"
 #import <lemon/LCLemonService.h>
-#import <lemon/LemonCommandTypes.pbobjc.h>
-#import <lemon/LemonGateway.pbobjc.h>
+#import <lemon/LCPingRequest.h>
+#import <lemon/LCPingResponse.h>
+#import <lemon/LCBindUserRequest.h>
+#import <lemon/LCBinduserResponse.h>
+#import <lemon/LCHttpDeliverRequest.h>
+#import <lemon/LCHttpDeliverResponse.h>
 
 @interface ViewController ()
 
@@ -23,13 +27,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NSString* url = @"http://lb.lemoncloud.tech/route";
-    //NSString* url = @"http://192.168.199.136:3101/route";
-    NSString* appId = @"54927e37f4a053b8c6de537ab7cdd479";
+    NSString* url = @"http://test.api.limeic.com/api/connectors/allocation";
+    //NSString* url = @"http:///192.168.2.207/api/connectors/allocation";
+    NSString* appId = @"307acc4411343315889eefe56e277f6e";
     
     // 初始化service
     _service = [LCLemonService sharedInstance];
-    [_service initWithUrl:url appId:appId onRegistry:^{
+    
+    // 测试service
+    [_service changeUrl:url];
+    
+    [_service initWithUrl:appId onRegistry:^{
         NSLog(@"registry!!");
     } onClosed:^{
         NSLog(@"service closed!!");
@@ -72,7 +80,7 @@
             return nil;
         }
         NSError* err = nil;
-        LemonPduBindUserResp* response = [LemonPduBindUserResp parseFromData:package.body error:&err];
+        LCBinduserResponse* response = [[LCBinduserResponse alloc] initWithData:package.body error:&err];
         if ( err != nil ) {
             NSLog(@"bind userId failed for userId: %@, err; %@", userId, err);
             return nil;
@@ -80,6 +88,7 @@
         NSLog(@"bind userId resp: %@", response);
         return nil;
     }];
+
     
     [[LCLemonService sharedInstance] bindUserId:userId handler:handler];
 }
@@ -92,7 +101,7 @@
             return nil;
         }
         NSError* err = nil;
-        LemonPduPingResp* response = [LemonPduPingResp parseFromData:package.body error:&err];
+        LCPingResponse* response = [[LCPingResponse alloc] initWithData: package.body error: &err];
         if ( err != nil ) {
             NSLog(@"ping resp err; %@", err);
             return nil;
@@ -107,6 +116,7 @@
 - (IBAction)onBtnSendHttpGet:(id)sender {
     
     LCBaseEventHandler* handler = [[LCBaseEventHandler alloc] initWithCallback:^LCLemonBasePackage * _Nullable(LCLemonBasePackage * _Nullable package) {
+        
         NSLog(@"received http get resp");
         
         if ( package == nil ) {
@@ -117,17 +127,18 @@
         }
         
         NSError* err = nil;
-        LemonPduTransitHttpMsgResp* resp = [LemonPduTransitHttpMsgResp parseFromData:package.body error:&err];
+        LCHttpDeliverResponse* response = [[LCHttpDeliverResponse alloc] initWithData:package.body error:&err];
         if ( err != nil ) {
             NSLog(@"receive http get resp failed. err: %@", err);
             return nil;
         }
-        NSLog(@"http get resp: %@", resp);
+        NSLog(@"http get resp: %@", response);
         return nil;
     }];
     
     NSString* url = @"http://demo.http.lemoncloud.tech/ping?data=helloworld";
-    [[LCLemonService sharedInstance] send:url data:nil method:HttpMethod_HTTPMethodGet headers:NULL handler:handler];
+    [[LCLemonService sharedInstance] send:url data:nil method:@"GET" headers:NULL handler:handler];
+    
 }
 
 - (IBAction)onBtnSendHttpPost:(id)sender {
@@ -143,19 +154,19 @@
         }
         
         NSError* err = nil;
-        LemonPduTransitHttpMsgResp* resp = [LemonPduTransitHttpMsgResp parseFromData:package.body error:&err];
+        LCHttpDeliverResponse* response = [[LCHttpDeliverResponse alloc] initWithData:package.body error:&err];
         if ( err != nil ) {
             NSLog(@"receive http post resp failed. err: %@", err);
             return nil;
         }
-        NSLog(@"http post resp: %@", resp);
+        NSLog(@"http post resp: %@", response);
         return nil;
     }];
     
     NSString* url = @"http://demo.http.lemoncloud.tech/ping";
     NSMutableDictionary *headers = [[NSMutableDictionary alloc] init];
     [headers setObject:@"application/json;charset=UTF-8" forKey:@"Content-Type"];
-    [[LCLemonService sharedInstance] send:url data:@"{\"hello\":\"world\", \"age\":10}" method:HttpMethod_HTTPMethodPost headers:headers handler:handler];
+    [[LCLemonService sharedInstance] send:url data:@"{\"hello\":\"world\", \"age\":10}" method:@"POST" headers:headers handler:handler];
 }
 
 @end

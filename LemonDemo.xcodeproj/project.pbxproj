@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000E6C4F8B8C42540E871962 /* libPods-LemonDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47452EDC459B6EDEF7AC6939 /* libPods-LemonDemo.a */; };
+		335BD7D424273655811E3BE9 /* libPods-LemonDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F4620846E1CD13EFA6D047E /* libPods-LemonDemoUITests.a */; };
+		6134DA7338990F9088C8A52C /* libPods-LemonDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C9DFAA85041E3AC4483A45 /* libPods-LemonDemoTests.a */; };
 		9F28714D1FF01B2900E8B6AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F28714C1FF01B2900E8B6AA /* AppDelegate.m */; };
 		9F2871501FF01B2900E8B6AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F28714F1FF01B2900E8B6AA /* ViewController.m */; };
 		9F2871531FF01B2900E8B6AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2871511FF01B2900E8B6AA /* Main.storyboard */; };
@@ -16,9 +19,6 @@
 		9F2871651FF01B2900E8B6AA /* LemonDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2871641FF01B2900E8B6AA /* LemonDemoTests.m */; };
 		9F2871701FF01B2900E8B6AA /* LemonDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F28716F1FF01B2900E8B6AA /* LemonDemoUITests.m */; };
 		9F28717E1FF01B9800E8B6AA /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9F28717D1FF01B9800E8B6AA /* Podfile */; };
-		9F96AF2E1FF2408E002790F5 /* lemon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F96AF2D1FF2408E002790F5 /* lemon.framework */; };
-		D370BB05D582274E950A579F /* libPods-LemonDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F74D5544B70A65E28695F793 /* libPods-LemonDemoUITests.a */; };
-		D6BA0CF49DE816F1DBF1F1AF /* libPods-LemonDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C485588F3FDD1D48DFA5A8C8 /* libPods-LemonDemoTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2BF1168C02AE2A27B3DE6F43 /* libPods-LemonDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LemonDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29C9DFAA85041E3AC4483A45 /* libPods-LemonDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LemonDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F4620846E1CD13EFA6D047E /* libPods-LemonDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LemonDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47452EDC459B6EDEF7AC6939 /* libPods-LemonDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LemonDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B18A8B0932B586031A0B34A /* Pods-LemonDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LemonDemoUITests/Pods-LemonDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7F3B277E1B5B0D3AA396FED6 /* Pods-LemonDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LemonDemo/Pods-LemonDemo.release.xcconfig"; sourceTree = "<group>"; };
 		7F6719A45E81D24039CF8D06 /* Pods-LemonDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LemonDemoUITests/Pods-LemonDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -64,8 +66,6 @@
 		9F96AF2D1FF2408E002790F5 /* lemon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = lemon.framework; sourceTree = "<group>"; };
 		AAF5230EDA9553FB3640C92E /* Pods-LemonDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LemonDemo/Pods-LemonDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B90ECC599343406909FC5CB5 /* Pods-LemonDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LemonDemoTests/Pods-LemonDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		C485588F3FDD1D48DFA5A8C8 /* libPods-LemonDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LemonDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F74D5544B70A65E28695F793 /* libPods-LemonDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LemonDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F96AF2E1FF2408E002790F5 /* lemon.framework in Frameworks */,
+				000E6C4F8B8C42540E871962 /* libPods-LemonDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6BA0CF49DE816F1DBF1F1AF /* libPods-LemonDemoTests.a in Frameworks */,
+				6134DA7338990F9088C8A52C /* libPods-LemonDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D370BB05D582274E950A579F /* libPods-LemonDemoUITests.a in Frameworks */,
+				335BD7D424273655811E3BE9 /* libPods-LemonDemoUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,9 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				9F96AF2D1FF2408E002790F5 /* lemon.framework */,
-				2BF1168C02AE2A27B3DE6F43 /* libPods-LemonDemo.a */,
-				C485588F3FDD1D48DFA5A8C8 /* libPods-LemonDemoTests.a */,
-				F74D5544B70A65E28695F793 /* libPods-LemonDemoUITests.a */,
+				47452EDC459B6EDEF7AC6939 /* libPods-LemonDemo.a */,
+				29C9DFAA85041E3AC4483A45 /* libPods-LemonDemoTests.a */,
+				2F4620846E1CD13EFA6D047E /* libPods-LemonDemoUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -188,8 +188,6 @@
 				9F2871441FF01B2900E8B6AA /* Sources */,
 				9F2871451FF01B2900E8B6AA /* Frameworks */,
 				9F2871461FF01B2900E8B6AA /* Resources */,
-				7182904AE5D69D4C58331C74 /* [CP] Embed Pods Frameworks */,
-				888854B9F56BD4A5A45A59E2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,8 +206,6 @@
 				9F28715C1FF01B2900E8B6AA /* Sources */,
 				9F28715D1FF01B2900E8B6AA /* Frameworks */,
 				9F28715E1FF01B2900E8B6AA /* Resources */,
-				CB998F23E15385486F76E31B /* [CP] Embed Pods Frameworks */,
-				F5AA159361D0B7D5C7DDEA3B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,8 +225,6 @@
 				9F2871671FF01B2900E8B6AA /* Sources */,
 				9F2871681FF01B2900E8B6AA /* Frameworks */,
 				9F2871691FF01B2900E8B6AA /* Resources */,
-				6F43439254FF82DDB2409145 /* [CP] Embed Pods Frameworks */,
-				DA44F40E20C2A313D4DF3C16 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -334,36 +328,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6F43439254FF82DDB2409145 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LemonDemoUITests/Pods-LemonDemoUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7182904AE5D69D4C58331C74 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LemonDemo/Pods-LemonDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		82CBB58A9A07BCA8F1205EB8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -380,66 +344,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		888854B9F56BD4A5A45A59E2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LemonDemo/Pods-LemonDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CB998F23E15385486F76E31B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LemonDemoTests/Pods-LemonDemoTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DA44F40E20C2A313D4DF3C16 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LemonDemoUITests/Pods-LemonDemoUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F5AA159361D0B7D5C7DDEA3B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LemonDemoTests/Pods-LemonDemoTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FA2D0BB17A5241E54E9AEADD /* [CP] Check Pods Manifest.lock */ = {

@@ -1,0 +1,1 @@
+../../../lemon/lemon/Classes/exception/LCBaseException.h
