@@ -37,7 +37,7 @@
     // 测试service
     [_service changeUrl:url];
     
-    [_service initWithUrl:appId onRegistry:^{
+    [_service initWithAppId:appId onRegistry:^{
         NSLog(@"registry!!");
     } onClosed:^{
         NSLog(@"service closed!!");

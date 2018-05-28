@@ -48,7 +48,7 @@ typedef void(^OnTextNotifyHandler)(NSString* data);
  * 初始化服务连接参数配置
  * @param appId    申请到的AppId
  */
--(void) initWithUrl: (nonnull NSString*) appId onRegistry:(nullable OnRegistry) onRegistry onClosed:(nullable OnClosed) onClosed onStopped:(nullable OnStopped) onStopped;
+-(void) initWithAppId: (nonnull NSString*) appId onRegistry:(nullable OnRegistry) onRegistry onClosed:(nullable OnClosed) onClosed onStopped:(nullable OnStopped) onStopped;
 
 /**
  * 启动服务

@@ -142,7 +142,7 @@ static const NSInteger KEventTimeout        = 30; // 事件30秒超时
 }
 
 // 设置配置参数
-- (void) initWithUrl:(NSString *)appId onRegistry:(OnRegistry)onRegistry onClosed:(OnClosed)onClosed onStopped:(OnStopped)onStopped {
+- (void) initWithAppId:(NSString *)appId onRegistry:(OnRegistry)onRegistry onClosed:(OnClosed)onClosed onStopped:(OnStopped)onStopped {
     
     if ( self.url == nil || self.appId == nil ) {
         @throw [[LCBaseException alloc]initWithName:@"参数异常" reason:@"传入的url或appId为空" userInfo:nil];
