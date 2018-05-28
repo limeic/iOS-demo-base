@@ -402,7 +402,7 @@ static const NSInteger KEventTimeout        = 30; // 事件30秒超时
     }];
 
     [[LCEventManager sharedInstance]
-     registryHandler:kBizTypeData
+     registryHandler:kBizTypeSys
      appId:_appId
      moduleId:kModuleConnector
      commandId:kCommandNotify

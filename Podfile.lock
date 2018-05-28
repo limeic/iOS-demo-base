@@ -3,7 +3,7 @@ PODS:
     - CocoaAsyncSocket/GCD (= 7.5.1)
   - CocoaAsyncSocket/GCD (7.5.1)
   - JSONModel (1.7.0)
-  - lemon (1.1.3):
+  - lemon (1.1.4):
     - CocoaAsyncSocket (~> 7.5.1)
     - JSONModel (~> 1.7.0)
 
@@ -19,7 +19,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   CocoaAsyncSocket: e0a7e93b2ffa411592ff87e58524fbbc9b95b4fa
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
-  lemon: 8c264edbd07667ad80db1ff5818cc06c463f9189
+  lemon: 87eb88ff1664491204c251ceeac1e22d540eee82
 
 PODFILE CHECKSUM: 464bb5a636551136f794ee4c0259de78c173d056
 

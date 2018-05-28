@@ -72,7 +72,7 @@
 
 - (IBAction)onBtnBindUser:(id)sender {
     
-    NSString* userId = @"123456";
+    NSString* userId = @"123456789";
     
     LCBaseEventHandler* handler = [[LCBaseEventHandler alloc] initWithCallback:^LCLemonBasePackage * _Nullable(LCLemonBasePackage * _Nullable package) {
         if ( package == nil ) {
