@@ -27,15 +27,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NSString* url = @"http://test.api.limeic.com/api/connectors/allocation";
-    //NSString* url = @"http:///192.168.2.207/api/connectors/allocation";
-    NSString* appId = @"307acc4411343315889eefe56e277f6e";
+    NSString* appId = @"48e8257f7e13ddcfb0a38a621387752a";
     
     // 初始化service
     _service = [LCLemonService sharedInstance];
-    
-    // 测试service
-    [_service changeUrl:url];
     
     [_service initWithAppId:appId onRegistry:^{
         NSLog(@"registry!!");
@@ -136,7 +131,7 @@
         return nil;
     }];
     
-    NSString* url = @"http://demo.http.lemoncloud.tech/ping?data=helloworld";
+    NSString* url = @"http://demo.http.limeic.com/ping?data=helloworld";
     [[LCLemonService sharedInstance] send:url data:nil method:@"GET" headers:NULL handler:handler];
     
 }
@@ -163,7 +158,7 @@
         return nil;
     }];
     
-    NSString* url = @"http://demo.http.lemoncloud.tech/ping";
+    NSString* url = @"http://demo.http.limeic.com/ping";
     NSMutableDictionary *headers = [[NSMutableDictionary alloc] init];
     [headers setObject:@"application/json;charset=UTF-8" forKey:@"Content-Type"];
     [[LCLemonService sharedInstance] send:url data:@"{\"hello\":\"world\", \"age\":10}" method:@"POST" headers:headers handler:handler];
